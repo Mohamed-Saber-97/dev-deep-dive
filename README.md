@@ -8,7 +8,8 @@ This repository is a collection of extensive study notes covering:
 
 - **Backend Development:**
     - [**Java Study Notes**](./Java%20Study%20Notes/Java%20Study%20Notes.md#java-study-notes)
-  
+    - [**Object-Oriented Programming (OOP)**](./Object-Oriented%20Programming%20(OOP)/Object-Oriented%20Programming%20(OOP).md#object-oriented-programming-oop)
+    - [**Design Patterns**](./Design%20Patterns/Design%20Patterns.md#design-patterns)
     - [**Thymeleaf**](https://www.thymeleaf.org/documentation.html)
 These notes are continuously updated with new insights and resources as my learning journey evolves.
 
