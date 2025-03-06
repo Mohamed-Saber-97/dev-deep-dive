@@ -11,6 +11,20 @@ This repository is a collection of extensive study notes covering:
     - [**Object-Oriented Programming (OOP)**](./Object-Oriented%20Programming%20(OOP)/Object-Oriented%20Programming%20(OOP).md#object-oriented-programming-oop)
     - [**Design Patterns**](./Design%20Patterns/Design%20Patterns.md#design-patterns)
     - [**Thymeleaf**](https://www.thymeleaf.org/documentation.html)
+- **Frontend Development**
+    - [**HTML**](https://web.dev/html)
+    - [**CSS**](https://web.dev/css)
+    - [**JavaScript**](https://web.dev/javascript)
+    - [**Web performance**](https://web.dev/performance)
+    - [**Accessibility**](https://web.dev/accessibility)
+    - [**Identity**](https://web.dev/identity)
+    - [**Testing**](https://web.dev/learn/testing)
+    - [**Tailwind**](https://tailwindcss.com/docs)
+    - [**Alpine.js**](https://alpinejs.dev/start-here)
+    - [**HTMX**](https://htmx.org/docs/)
+    - [**TypeScript**](https://www.typescriptlang.org/docs/handbook/intro.html)
+    - [**Angular**](https://angular.dev/overview)
+
 These notes are continuously updated with new insights and resources as my learning journey evolves.
 
 ## Disclaimer
