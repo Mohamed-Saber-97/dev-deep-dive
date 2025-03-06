@@ -9,6 +9,7 @@ This repository is a collection of extensive study notes covering:
 - **Backend Development:**
     - [**Java Study Notes**](./Java%20Study%20Notes/Java%20Study%20Notes.md#java-study-notes)
   
+    - [**Thymeleaf**](https://www.thymeleaf.org/documentation.html)
 These notes are continuously updated with new insights and resources as my learning journey evolves.
 
 ## Disclaimer
