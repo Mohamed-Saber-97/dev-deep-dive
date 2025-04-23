@@ -10,15 +10,17 @@ This repository is a collection of extensive study notes covering:
     - [**Java Study Notes**](./Java%20Study%20Notes/Java%20Study%20Notes.md#java-study-notes)
     - [**Object-Oriented Programming (OOP)**](./Object-Oriented%20Programming%20(OOP)/Object-Oriented%20Programming%20(OOP).md#object-oriented-programming-oop)
     - [**Design Patterns**](./Design%20Patterns/Design%20Patterns.md#design-patterns)
+    - [**Database**](./Database/Database.md#database)
     - [**Thymeleaf**](https://www.thymeleaf.org/documentation.html)
+    - [**Flowable Open Source**](./Flowable/Flowable.md#flowable-open-source)
 - **Frontend Development**
-    - [**HTML**](https://web.dev/html)
-    - [**CSS**](https://web.dev/css)
-    - [**JavaScript**](https://web.dev/javascript)
-    - [**Web performance**](https://web.dev/performance)
-    - [**Accessibility**](https://web.dev/accessibility)
-    - [**Identity**](https://web.dev/identity)
-    - [**Testing**](https://web.dev/learn/testing)
+    - [**MDN Curriculum**](https://developer.mozilla.org/en-US/curriculum/)
+        - **HTML**
+        - **CSS**
+        - **JavaScript**
+        - **Web performance**
+        - **Accessibility**
+        - **Testing**
     - [**Tailwind**](https://tailwindcss.com/docs)
     - [**Alpine.js**](https://alpinejs.dev/start-here)
     - [**HTMX**](https://htmx.org/docs/)

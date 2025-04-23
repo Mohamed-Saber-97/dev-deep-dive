@@ -11,7 +11,7 @@
 - Regularly visit the [**exam website**](https://education.oracle.com/java-se-17-developer/pexam_1Z0-829), as Oracle is known to change practical information regarding the exam and the exam objectives intermittently
 - The goal of the exams is to test practical knowledge and usage of the Java programming language and specific APIs
 - The exams require a thorough understanding of both the syntax and the semantics of the language, including the use of its core APIs
-- It's highly recommend joining an [online Java certification community](https://coderanch.com/f/24/java-programmer-OCPJP), such as [Code Ranch](https://coderanch.com), which has dedicated active forums for the different Java certifications
+- It's highly recommended joining an [online Java certification community](https://coderanch.com/f/24/java-programmer-OCPJP), such as [Code Ranch](https://coderanch.com), which has dedicated active forums for the different Java certifications
 - [**Enthuware**](https://enthuware.com/) provides more practice tests for OCP Java SE Developer certification at a nominal price
 
 ### Registering for the Online Proctored Exam
@@ -30,7 +30,7 @@
 
 ### How the Online Proctored Exam Is Conducted
 
-- Specific requirements are stipulated at the Oracle MyLearn portal for the computer equipment, required ID proofs, and test space in order to take the online exam and a proctor will ensure that these requirements are met before the exam begins and during the exam, consult the Oracle MyLearn portal for the requirements that are in effect at any given time. The following is a short summary of these requirements
+- Specific requirements are stipulated at the Oracle MyLearn portal for the computer equipment, required ID proofs, and test space in order to take the online exam, and a proctor will ensure that these requirements are met before the exam begins and during the exam, consult the Oracle MyLearn portal for the requirements that are in effect at any given time. The following is a short summary of these requirements
     - Computer equipment
         - Minimum requirements are spelled out for computer equipment (personal desktop/laptop) with regard to Internet connectivity, audio, and webcam capabilities
         - You will need to prepare your equipment in advance so that it meets the minimum requirements
@@ -57,7 +57,7 @@
     - The exam results are presented on the screen after the exam. Afterward, you should log on to the CertView certification portal to see details about your performance
     - An indication of whether you've passed or failed.
     - The total score. All the scored questions are weighted equally, and the score is calculated based on the percentage of correct answers. No credit is given for partially correct answers for the scored questions
-    - Indications on how well you did on each category within the objectives. Candidates who fail the exam should pay close attention to this information. If you're planning to retake the exam, it may give a good indication of which topics need closer attention
+    - Indications on how well you did in each category within the objectives. Candidates who fail the exam should pay close attention to this information. If you're planning to retake the exam, it may give a good indication of which topics need closer attention
     - The result will not divulge which questions were answered correctly.
 
 ### The Questions
@@ -89,7 +89,7 @@
     - In this case, all choices should be considered on their own merits; that is, responses should not be weighed against each other.
     - It can be helpful to think of each of the choices as an individual true–false question
 - Topics Covered by the Questions
-    - Not all topics may appear on an actual exam session, due to the limited number of questions comprising the exam
+    - Not all topics may appear on an actual exam session due to the limited number of questions comprising the exam
     - Many of the questions will require intimate knowledge of core Java APIs
     - **The Java SE Platform API documentation should be consulted, as it is essential that candidates familiarize themselves with the relevant parts of the API documentation**
 
@@ -97,7 +97,7 @@
 
 > **Important Note:**  
 > Items marked with 🎯 indicate the core exam topics.  
-> If a parent (or header) item is marked with 🎯, then one or more of its sub-menu items are also marked.
+> If a parent (or header) item is marked with 🎯, then one or more of its submenu items are also marked.
 
 ### Why This Section?
 
@@ -135,8 +135,8 @@ This section is dedicated to helping those preparing for Java certification exam
         * [Precedence and Associativity Rules `for` Operators 🎯](#precedence-and-associativity-rules-for-operators-)
         * [Evaluation Order of Operands 🎯](#evaluation-order-of-operands-)
         * [The Simple Assignment Operator `=` 🎯](#the-simple-assignment-operator--)
-        * [Arithmetic Operators: *, /, %, +,### 🎯](#arithmetic-operators-----)
-        * [The Binary String Concatenation Operator + 🎯](#the-binary-string-concatenation-operator--)
+        * [Arithmetic Operators: `*`, `/`, `%`, `+`, `-` 🎯](#arithmetic-operators-------)
+        * [The Binary String Concatenation Operator `+` 🎯](#the-binary-string-concatenation-operator--)
         * [Variable Increment and Decrement Operators: `++`,`--` 🎯](#variable-increment-and-decrement-operators----)
         * [Boolean Expressions 🎯](#boolean-expressions-)
         * [Relational Operators: `<`, `<=,` `>`, `>=` 🎯](#relational-operators-----)
@@ -340,7 +340,7 @@ This section is dedicated to helping those preparing for Java certification exam
         * [Creating a Modular Application 🎯](#creating-a-modular-application-)
         * [Compiling and Running a Modular Application 🎯](#compiling-and-running-a-modular-application-)
         * [Creating JAR Files 🎯](#creating-jar-files-)
-        * [Open Modules and the opens Directive 🎯](#open-modules-and-the-opens-directive-)
+        * [Open Modules and the open Directive 🎯](#open-modules-and-the-open-directive-)
         * [Services 🎯](#services-)
         * [Creating Runtime Images 🎯](#creating-runtime-images-)
         * [Categories of Modules 🎯](#categories-of-modules-)
@@ -405,6 +405,7 @@ This section is dedicated to helping those preparing for Java certification exam
         * [Configuring Logging](#configuring-logging)
         * [Writing Log Messages](#writing-log-messages)
         * [Applying Guarded Logging](#applying-guarded-logging)
+    * [How to Write Doc Comments for the Javadoc Tool](#how-to-write-doc-comments-for-the-javadoc-tool)
 
 <!-- TOC -->
 
@@ -414,6 +415,22 @@ This section is dedicated to helping those preparing for Java certification exam
 ## Basics of Java Programming
 
 ### The Java Ecosystem
+
+- There are different Java platforms each one provides a hardware/operating system – specific JVM and an API (application programming interface) to develop applications for that platform, each targeting different application domains:
+    - **Java SE (Standard Edition)**:
+        - The Java SE platform provides the core functionality of the language.
+        - designed for developing desktop and server environments
+        - **Java EE, also known as Jakarta EE (Enterprise Edition)**:
+            - The Java EE platform is a superset of the Java SE platform and, as the most extensive of the three platforms, targets enterprise application development
+            - designed for developing enterprise applications
+    - **Java ME (Micro Edition)**:
+        - The Java ME platform is a subset of the Java SE platform, having a small footprint, and is suitable for developing mobile and embedded applications
+        - designed for embedded systems, such as mobile devices and set-top boxes
+    - **Java Card**:
+        - The Java Card platform allows development of embedded applications that have a very tiny memory footprint, targeting devices like smart cards.
+        - designed for tiny memory footprint devices, such as smart cards
+-
+-
 
 ### Classes
 
@@ -451,9 +468,9 @@ This section is dedicated to helping those preparing for Java certification exam
 
 ### The Simple Assignment Operator `=` 🎯
 
-### Arithmetic Operators: *, /, %, +,### 🎯
+### Arithmetic Operators: `*`, `/`, `%`, `+`, `-` 🎯
 
-### The Binary String Concatenation Operator + 🎯
+### The Binary String Concatenation Operator `+` 🎯
 
 ### Variable Increment and Decrement Operators: `++`,`--` 🎯
 
@@ -893,7 +910,7 @@ This section is dedicated to helping those preparing for Java certification exam
 
 ### Creating JAR Files 🎯
 
-### Open Modules and the opens Directive 🎯
+### Open Modules and the open Directive 🎯
 
 ### Services 🎯
 
@@ -1034,3 +1051,41 @@ This section is dedicated to helping those preparing for Java certification exam
 ### Writing Log Messages
 
 ### Applying Guarded Logging
+
+------------------------------------------------------------------------------------------------------------------
+
+## [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
+
+### Introduction
+
+#### Principles
+
+#### Terminology
+
+#### Source Files
+
+### Writing Doc Comments
+
+#### Format of a Doc Comment
+
+#### Doc Comment Checking Tool
+
+#### Descriptions
+
+#### A Style Guide
+
+#### Tag Conventions (`@tag`)
+
+#### Documenting Default Constructors
+
+#### Documenting Exceptions with `@throws` Tag
+
+#### Package-Level Comments
+
+#### Documenting Anonymous Inner Classes
+
+#### Including Images
+
+#### Examples of Doc Comments
+
+#### Troubleshooting Curly Quotes (Microsoft Word)
