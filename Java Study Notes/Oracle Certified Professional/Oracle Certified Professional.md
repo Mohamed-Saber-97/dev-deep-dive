@@ -106,369 +106,371 @@ This section is dedicated to helping those preparing for Java certification exam
 ### Table Of Contents
 
 <!-- TOC -->
+
 * [OCP Oracle Certified Professional Java SE 17 Developer (Exam 1Z0-829) Programmer’s Guide](#ocp-oracle-certified-professional-java-se-17-developer-exam-1z0-829-programmers-guide)
-  * [Java Certification Exam Guide](#java-certification-exam-guide)
-    * [Preparing for the Exam](#preparing-for-the-exam)
-    * [Registering for the Online Proctored Exam](#registering-for-the-online-proctored-exam)
-    * [How the Online Proctored Exam Is Conducted](#how-the-online-proctored-exam-is-conducted)
-    * [The Questions](#the-questions)
-    * [Exam Topics: Java SE 17 Developer](#exam-topics-java-se-17-developer)
-    * [Why This Section?](#why-this-section)
-    * [Table Of Contents](#table-of-contents)
-  * [Basics of Java Programming](#basics-of-java-programming)
-    * [The Java Ecosystem](#the-java-ecosystem)
-    * [Key Features of Java](#key-features-of-java)
-    * [Classes](#classes)
-    * [Objects](#objects)
-      * [Class Instantiation, Reference Values, and References](#class-instantiation-reference-values-and-references)
-    * [Instance Members](#instance-members)
-      * [Invoking Methods](#invoking-methods)
-    * [Static Members](#static-members)
-      * [Terminology for Class Members](#terminology-for-class-members)
-    * [Inheritance](#inheritance)
-    * [Aggregation](#aggregation)
-    * [Sample Java Program](#sample-java-program)
-      * [Essential Elements of a Java Program](#essential-elements-of-a-java-program)
-      * [Compiling a Program](#compiling-a-program)
-      * [Running a Program](#running-a-program)
-      * [Running a Single-File Source-Code Program](#running-a-single-file-source-code-program)
-    * [Program Output](#program-output)
-      * [Formatted Output](#formatted-output)
-  * [Basic Elements, Primitive Data Types, and Operators 🎯](#basic-elements-primitive-data-types-and-operators-)
-    * [Basic Language Elements](#basic-language-elements)
-      * [Lexical Tokens](#lexical-tokens)
-      * [Identifiers](#identifiers)
-      * [Keywords](#keywords)
-        * [Keywords in Java](#keywords-in-java)
-        * [Contextual Keywords](#contextual-keywords)
-        * [Reserved Keywords Not Currently in Use](#reserved-keywords-not-currently-in-use)
-        * [Reserved Literals in Java](#reserved-literals-in-java)
-      * [Separators](#separators)
-      * [Literals](#literals)
-      * [Integer Literals](#integer-literals)
-      * [Floating-Point Literals](#floating-point-literals)
-      * [Underscores in Numerical Literals](#underscores-in-numerical-literals)
-      * [Character Literals](#character-literals)
-      * [Escape Sequences](#escape-sequences)
-      * [String Literals](#string-literals)
-      * [Whitespace](#whitespace)
-      * [Comments](#comments)
-    * [Primitive Data Types 🎯](#primitive-data-types-)
-      * [The Integer Types](#the-integer-types)
-      * [The `char` Type](#the-char-type)
-      * [The Floating-Point Types](#the-floating-point-types)
-      * [The `boolean` Type](#the-boolean-type)
-    * [Conversions 🎯](#conversions-)
-      * [Widening and Narrowing Primitive Conversions](#widening-and-narrowing-primitive-conversions)
-      * [Widening and Narrowing Reference Conversions](#widening-and-narrowing-reference-conversions)
-      * [Boxing and Unboxing Conversions](#boxing-and-unboxing-conversions)
-      * [Other Conversions](#other-conversions)
-    * [Type Conversion Contexts 🎯](#type-conversion-contexts-)
-      * [Conversion categories](#conversion-categories)
-        * [Assignment Context](#assignment-context)
-        * [Method Invocation Context](#method-invocation-context)
-        * [Casting Context of the Unary Type Cast Operator (_type_)](#casting-context-of-the-unary-type-cast-operator-_type_)
-        * [Numeric Promotion Context](#numeric-promotion-context)
-    * [Precedence and Associativity Rules for Operators 🎯](#precedence-and-associativity-rules-for-operators-)
-      * [Operator Summary](#operator-summary)
-    * [Evaluation Order of Operands 🎯](#evaluation-order-of-operands-)
-      * [Left-Hand Operand Evaluation First](#left-hand-operand-evaluation-first)
-      * [Operand Evaluation before Operation Execution](#operand-evaluation-before-operation-execution)
-    * [The Simple Assignment Operator `=` 🎯](#the-simple-assignment-operator--)
-      * [Type Conversions in an Assignment Context](#type-conversions-in-an-assignment-context)
-    * [Arithmetic Operators: `*`, `/`, `%`, `+`, `-` 🎯](#arithmetic-operators-------)
-      * [Division Operator: `/`](#division-operator-)
-      * [Remainder Operator: `%`](#remainder-operator-)
-      * [Numeric Promotions in Arithmetic Expressions](#numeric-promotions-in-arithmetic-expressions)
-      * [Arithmetic Compound Assignment Operators: `*=`, `/=`, `%=`, `+=`, `-=`](#arithmetic-compound-assignment-operators------)
-    * [The Binary String Concatenation Operator `+` 🎯](#the-binary-string-concatenation-operator--)
-    * [Variable Increment and Decrement Operators: `++`,`--` 🎯](#variable-increment-and-decrement-operators----)
-    * [Boolean Expressions 🎯](#boolean-expressions-)
-    * [Relational Operators: `<`, `<=,` `>`, `>=` 🎯](#relational-operators-----)
-    * [Equality 🎯](#equality-)
-    * [Boolean Logical Operators: `!`, `^`, `&`, `|` 🎯](#boolean-logical-operators-----)
-    * [Conditional Operators: `&&`, `||` 🎯](#conditional-operators---)
-    * [Integer Bitwise Operators: `~`, `&`, `|`, `^` 🎯](#integer-bitwise-operators-----)
-    * [Shift Operators: `<<`, `>>`, `>>>` 🎯](#shift-operators----)
-    * [The Conditional Operator `?:` 🎯](#the-conditional-operator--)
-    * [Other Operators: `new`, `[]`, `instanceof`, `-`> 🎯](#other-operators-new--instanceof---)
-    * [Exam Questions 🎯](#exam-questions-)
-  * [Declarations 🎯](#declarations-)
-    * [Class Declarations 🎯](#class-declarations-)
-    * [Method Declarations 🎯](#method-declarations-)
-    * [Statements 🎯](#statements-)
-    * [Variable Declarations 🎯](#variable-declarations-)
-    * [Instance Methods and the Object Reference `this` 🎯](#instance-methods-and-the-object-reference-this-)
-    * [Method Overloading 🎯](#method-overloading-)
-    * [Constructors 🎯](#constructors-)
-    * [Static Member Declarations 🎯](#static-member-declarations-)
-    * [Arrays 🎯](#arrays-)
-    * [Parameter Passing](#parameter-passing)
-    * [Variable Arity Methods 🎯](#variable-arity-methods-)
-    * [The `main()` Method](#the-main-method)
-    * [Local Variable Type Inference 🎯](#local-variable-type-inference-)
-    * [Exam Questions 🎯](#exam-questions--1)
-  * [Control Flow 🎯](#control-flow-)
-    * [Selection Statements 🎯](#selection-statements-)
-    * [The `switch` Statement 🎯](#the-switch-statement-)
-    * [The `switch` Expression 🎯](#the-switch-expression-)
-    * [Iteration Statements 🎯](#iteration-statements-)
-    * [The `while` Statement 🎯](#the-while-statement-)
-    * [The `do`-`while` Statement 🎯](#the-do-while-statement-)
-    * [The `for(;;)` Statement 🎯](#the-for-statement-)
-    * [The `for(:)` Statement 🎯](#the-for-statement--1)
-    * [Transfer Statements 🎯](#transfer-statements-)
-    * [Labeled Statements 🎯](#labeled-statements-)
-    * [The `break` Statement 🎯](#the-break-statement-)
-    * [The `continue` Statement 🎯](#the-continue-statement-)
-    * [The `return` Statement 🎯](#the-return-statement-)
-    * [Exam Questions 🎯](#exam-questions--2)
-  * [Object-Oriented Programming 🎯](#object-oriented-programming-)
-    * [Implementing Inheritance 🎯](#implementing-inheritance-)
-    * [The Object Reference super 🎯](#the-object-reference-super-)
-    * [Chaining Constructors Using `this()` and `super()` 🎯](#chaining-constructors-using-this-and-super-)
-    * [Abstract Classes and Methods 🎯](#abstract-classes-and-methods-)
-    * [Final Declarations](#final-declarations)
-    * [Interfaces 🎯](#interfaces-)
-    * [Arrays and Subtyping](#arrays-and-subtyping)
-    * [Reference Values and Conversions](#reference-values-and-conversions)
-    * [Reference Value Assignment Conversions](#reference-value-assignment-conversions)
-    * [Method Invocation Conversions Involving References](#method-invocation-conversions-involving-references)
-    * [Reference Casting and the instanceof Operator 🎯](#reference-casting-and-the-instanceof-operator-)
-    * [Polymorphism 🎯](#polymorphism-)
-    * [Enum Types 🎯](#enum-types-)
-    * [Record Classes 🎯](#record-classes-)
-    * [Sealed Classes and Interfaces 🎯](#sealed-classes-and-interfaces-)
-    * [Exam Questions 🎯](#exam-questions--3)
-  * [Access Control 🎯](#access-control-)
-    * [Design Principle: Encapsulation 🎯](#design-principle-encapsulation-)
-    * [Java Source File Structure](#java-source-file-structure)
-    * [Packages](#packages)
-    * [Searching for Classes on the Class Path](#searching-for-classes-on-the-class-path)
-    * [Access Modifiers](#access-modifiers)
-    * [Scope Rules 🎯](#scope-rules-)
-    * [Implementing Immutability 🎯](#implementing-immutability-)
-    * [Exam Questions 🎯](#exam-questions--4)
-  * [Exception Handling 🎯](#exception-handling-)
-    * [Stack-Based Execution and Exception Propagation](#stack-based-execution-and-exception-propagation)
-    * [Exception Types 🎯](#exception-types-)
-    * [Exception Handling: `try`, `catch`, and `finally` 🎯](#exception-handling-try-catch-and-finally-)
-    * [The `throw` Statement](#the-throw-statement)
-    * [The `throws` Clause](#the-throws-clause)
-    * [The Multi-`catch` Clause 🎯](#the-multi-catch-clause-)
-    * [The `try`-with-resources Statement 🎯](#the-try-with-resources-statement-)
-    * [Advantages of Exception Handling](#advantages-of-exception-handling)
-    * [Exam Questions 🎯](#exam-questions--5)
-  * [Selected API Classes 🎯](#selected-api-classes-)
-    * [Overview of the `java.lang` Package](#overview-of-the-javalang-package)
-    * [The `Object` Class](#the-object-class)
-    * [The Wrapper Classes 🎯](#the-wrapper-classes-)
-    * [The `String` Class 🎯](#the-string-class-)
-    * [The `StringBuilder` Class 🎯](#the-stringbuilder-class-)
-    * [The `Math` Class 🎯](#the-math-class-)
-    * [The `Random` Class](#the-random-class)
-    * [Using Big Numbers](#using-big-numbers)
-    * [Exam Questions 🎯](#exam-questions--6)
-  * [Nested Type Declarations 🎯](#nested-type-declarations-)
-    * [Overview of Nested Type Declarations 🎯](#overview-of-nested-type-declarations-)
-    * [Static Member Types 🎯](#static-member-types-)
-    * [Non-Static Member Classes 🎯](#non-static-member-classes-)
-    * [Local Classes 🎯](#local-classes-)
-    * [Static Local Types 🎯](#static-local-types-)
-    * [Anonymous Classes 🎯](#anonymous-classes-)
-    * [Exam Questions 🎯](#exam-questions--7)
-  * [Object Lifetime 🎯](#object-lifetime-)
-    * [Garbage Collection 🎯](#garbage-collection-)
-    * [Reachable Objects 🎯](#reachable-objects-)
-    * [Facilitating Garbage Collection 🎯](#facilitating-garbage-collection-)
-    * [Invoking Garbage Collection Programmatically 🎯](#invoking-garbage-collection-programmatically-)
-    * [Initializers 🎯](#initializers-)
-    * [Field Initializer Expressions 🎯](#field-initializer-expressions-)
-    * [Static Initializer Blocks 🎯](#static-initializer-blocks-)
-    * [Instance Initializer Blocks 🎯](#instance-initializer-blocks-)
-    * [Constructing Initial Object State 🎯](#constructing-initial-object-state-)
-    * [Exam Questions 🎯](#exam-questions--8)
-  * [Generics 🎯](#generics-)
-    * [Introducing Generics 🎯](#introducing-generics-)
-    * [Generic Types and Parameterized Types 🎯](#generic-types-and-parameterized-types-)
-    * [Collections and Generics 🎯](#collections-and-generics-)
-    * [Wildcards 🎯](#wildcards-)
-    * [Using References of Wildcard Parameterized Types 🎯](#using-references-of-wildcard-parameterized-types-)
-    * [Bounded Type Parameters 🎯](#bounded-type-parameters-)
-    * [Generic Methods and Constructors 🎯](#generic-methods-and-constructors-)
-    * [Implementing a Simplified Generic Stack 🎯](#implementing-a-simplified-generic-stack-)
-    * [Wildcard Capture 🎯](#wildcard-capture-)
-    * [Flexibility with Wildcard Parameterized Types 🎯](#flexibility-with-wildcard-parameterized-types-)
-    * [Type Erasure 🎯](#type-erasure-)
-    * [Implications for Overloading and Overriding 🎯](#implications-for-overloading-and-overriding-)
-    * [Limitations and Restrictions on Generic Types 🎯](#limitations-and-restrictions-on-generic-types-)
-    * [Exam Questions 🎯](#exam-questions--9)
-  * [Collections 🎯](#collections-)
-    * [The Java Collections Framework 🎯](#the-java-collections-framework-)
-    * [Collections 🎯](#collections--1)
-    * [The `Collections` Class 🎯](#the-collections-class-)
-    * [Lists 🎯](#lists-)
-    * [Declaring References and Constructing ArrayLists 🎯](#declaring-references-and-constructing-arraylists-)
-    * [Modifying an `ArrayList<E>` 🎯](#modifying-an-arrayliste-)
-    * [Querying an `ArrayList<E>` 🎯](#querying-an-arrayliste-)
-    * [Iterating Over an `ArrayList<E>` 🎯](#iterating-over-an-arrayliste-)
-    * [Converting an `ArrayList<E>` to an `Array` 🎯](#converting-an-arrayliste-to-an-array-)
-    * [Creating `List` Views 🎯](#creating-list-views-)
-    * [`Arrays` versus `ArrayLists` 🎯](#arrays-versus-arraylists-)
-    * [The `Arrays` Class 🎯](#the-arrays-class-)
-    * [Sets 🎯](#sets-)
-    * [Sorted Sets and Navigable Sets 🎯](#sorted-sets-and-navigable-sets-)
-    * [Queues 🎯](#queues-)
-    * [Deques 🎯](#deques-)
-    * [Maps 🎯](#maps-)
-    * [Map Implementations 🎯](#map-implementations-)
-    * [Sorted Maps and Navigable Maps 🎯](#sorted-maps-and-navigable-maps-)
-    * [Exam Questions 🎯](#exam-questions--10)
-  * [Functional-Style Programming 🎯](#functional-style-programming-)
-    * [Functional Interfaces 🎯](#functional-interfaces-)
-    * [Lambda Expressions 🎯](#lambda-expressions-)
-    * [Lambda Expressions and Anonymous Classes 🎯](#lambda-expressions-and-anonymous-classes-)
-    * [Overview of Built-In Functional Interfaces 🎯](#overview-of-built-in-functional-interfaces-)
-    * [Suppliers 🎯](#suppliers-)
-    * [Predicates 🎯](#predicates-)
-    * [Consumers 🎯](#consumers-)
-    * [Functions 🎯](#functions-)
-    * [Two-Arity Specialization of `Function<T, R>`: `BiFunction<T, U, R>` 🎯](#two-arity-specialization-of-functiont-r-bifunctiont-u-r-)
-    * [Extending `Function<T,T>`: `UnaryOperator<T>` 🎯](#extending-functiontt-unaryoperatort-)
-    * [Extending `BiFunction<T,T,T>`: `BinaryOperator<T>` 🎯](#extending-bifunctionttt-binaryoperatort-)
-    * [Currying Functions 🎯](#currying-functions-)
-    * [Method and Constructor References 🎯](#method-and-constructor-references-)
-    * [Contexts for Defining Lambda Expressions 🎯](#contexts-for-defining-lambda-expressions-)
-    * [Exam Questions 🎯](#exam-questions--11)
-  * [`Object` Comparison 🎯](#object-comparison-)
-    * [The `Objects` Class 🎯](#the-objects-class-)
-    * [Implementing the `equals()` Method 🎯](#implementing-the-equals-method-)
-    * [Implementing the `hashCode()` Method 🎯](#implementing-the-hashcode-method-)
-    * [Implementing the `java.lang.Comparable<E>` Interface 🎯](#implementing-the-javalangcomparablee-interface-)
-    * [Implementing the `java.util.Comparator<E>` Interface 🎯](#implementing-the-javautilcomparatore-interface-)
-    * [Exam Questions 🎯](#exam-questions--12)
-  * [Streams 🎯](#streams-)
-    * [Introduction to Streams](#introduction-to-streams)
-    * [Running Example: The CD Record Class](#running-example-the-cd-record-class)
-    * [Stream Basics 🎯](#stream-basics-)
-    * [Building Streams 🎯](#building-streams-)
-    * [Intermediate Stream Operations 🎯](#intermediate-stream-operations-)
-    * [The `Optional` Class 🎯](#the-optional-class-)
-    * [Terminal Stream Operations 🎯](#terminal-stream-operations-)
-    * [Collectors 🎯](#collectors-)
-    * [Parallel Streams 🎯](#parallel-streams-)
-    * [Exam Questions 🎯](#exam-questions--13)
-  * [Date and Time 🎯](#date-and-time-)
-    * [Date and Time API Overview 🎯](#date-and-time-api-overview-)
-    * [Working with Dates and Times 🎯](#working-with-dates-and-times-)
-    * [Using Temporal Units and Temporal Fields 🎯](#using-temporal-units-and-temporal-fields-)
-    * [Working with Instants 🎯](#working-with-instants-)
-    * [Working with Periods 🎯](#working-with-periods-)
-    * [Working with Durations 🎯](#working-with-durations-)
-    * [Working with Time Zones and Daylight Savings 🎯](#working-with-time-zones-and-daylight-savings-)
-    * [Converting Date and Time Values to Legacy Date](#converting-date-and-time-values-to-legacy-date)
-    * [Exam Questions 🎯](#exam-questions--14)
-  * [Localization 🎯](#localization-)
-    * [Using Locales 🎯](#using-locales-)
-    * [Properties Files 🎯](#properties-files-)
-    * [Bundling Resources 🎯](#bundling-resources-)
-    * [Core API for Formatting and Parsing of Values 🎯](#core-api-for-formatting-and-parsing-of-values-)
-    * [Formatting and Parsing Number, Currency, and Percentage Values 🎯](#formatting-and-parsing-number-currency-and-percentage-values-)
-    * [Formatting and Parsing Date and Time 🎯](#formatting-and-parsing-date-and-time-)
-    * [Formatting and Parsing Messages 🎯](#formatting-and-parsing-messages-)
-    * [Exam Questions 🎯](#exam-questions--15)
-  * [Java Module System 🎯](#java-module-system-)
-    * [Making the Case for Modules 🎯](#making-the-case-for-modules-)
-    * [The Modular JDK 🎯](#the-modular-jdk-)
-    * [Module Basics 🎯](#module-basics-)
-    * [Overview of Module Directives 🎯](#overview-of-module-directives-)
-    * [Creating a Modular Application 🎯](#creating-a-modular-application-)
-    * [Compiling and Running a Modular Application 🎯](#compiling-and-running-a-modular-application-)
-    * [Creating JAR Files 🎯](#creating-jar-files-)
-    * [Open Modules and the open Directive 🎯](#open-modules-and-the-open-directive-)
-    * [Services 🎯](#services-)
-    * [Creating Runtime Images 🎯](#creating-runtime-images-)
-    * [Categories of Modules 🎯](#categories-of-modules-)
-    * [Migrating to Modules 🎯](#migrating-to-modules-)
-    * [Exploring Modules 🎯](#exploring-modules-)
-    * [Summary of Selected Operations with the JDK Tools 🎯](#summary-of-selected-operations-with-the-jdk-tools-)
-    * [Exam Questions 🎯](#exam-questions--16)
-  * [Java I/O 🎯](#java-io-)
-    * [Input and Output 🎯](#input-and-output-)
-    * [Byte Streams: Input Streams and Output Streams 🎯](#byte-streams-input-streams-and-output-streams-)
-    * [Character Streams: Readers and Writers 🎯](#character-streams-readers-and-writers-)
-    * [The `Console` Class 🎯](#the-console-class-)
-    * [Object Serialization 🎯](#object-serialization-)
-    * [Characteristics of a Hierarchical File System 🎯](#characteristics-of-a-hierarchical-file-system-)
-    * [Creating Path Objects 🎯](#creating-path-objects-)
-    * [Working with Path Objects 🎯](#working-with-path-objects-)
-    * [Operations on Directory Entries 🎯](#operations-on-directory-entries-)
-    * [Reading and Writing Files Using Paths 🎯](#reading-and-writing-files-using-paths-)
-    * [Managing File Attributes 🎯](#managing-file-attributes-)
-    * [Creating Directory Entries 🎯](#creating-directory-entries-)
-    * [Stream Operations on Directory Entries 🎯](#stream-operations-on-directory-entries-)
-    * [Exam Questions 🎯](#exam-questions--17)
-  * [Concurrency 🎯](#concurrency-)
-    * [Threads and Concurrency 🎯](#threads-and-concurrency-)
-    * [Runtime Organization for Thread Execution 🎯](#runtime-organization-for-thread-execution-)
-    * [Creating Threads 🎯](#creating-threads-)
-    * [Thread Lifecycle 🎯](#thread-lifecycle-)
-    * [Thread Issues 🎯](#thread-issues-)
-    * [Utility Classes `TimeUnit` and `ThreadLocalRandom`](#utility-classes-timeunit-and-threadlocalrandom)
-    * [The Executor Framework 🎯](#the-executor-framework-)
-    * [The Fork/Join Framework 🎯](#the-forkjoin-framework-)
-    * [Writing Thread-Safe Code 🎯](#writing-thread-safe-code-)
-    * [Special-Purpose Synchronizers 🎯](#special-purpose-synchronizers-)
-    * [Synchronized Collections and Maps 🎯](#synchronized-collections-and-maps-)
-    * [Concurrent Collections and Maps 🎯](#concurrent-collections-and-maps-)
-    * [Exam Questions 🎯](#exam-questions--18)
-  * [Database Connectivity 🎯](#database-connectivity-)
-    * [Introduction to Relational Databases 🎯](#introduction-to-relational-databases-)
-    * [Introduction to JDBC 🎯](#introduction-to-jdbc-)
-    * [Establishing a Database Connection 🎯](#establishing-a-database-connection-)
-    * [Creating and Executing SQL Statements 🎯](#creating-and-executing-sql-statements-)
-    * [Processing Query Results 🎯](#processing-query-results-)
-    * [Customizing Result Sets 🎯](#customizing-result-sets-)
-    * [Discovering Database and ResultSet Metadata 🎯](#discovering-database-and-resultset-metadata-)
-    * [Implementing Transaction Control 🎯](#implementing-transaction-control-)
-    * [Exam Questions 🎯](#exam-questions--19)
-  * [Annotations 🎯](#annotations-)
-    * [Basics of Annotations 🎯](#basics-of-annotations-)
-    * [Declaring Annotation Types 🎯](#declaring-annotation-types-)
-    * [Applying Annotations 🎯](#applying-annotations-)
-    * [Meta-Annotations 🎯](#meta-annotations-)
-    * [Selected Standard Annotations 🎯](#selected-standard-annotations-)
-    * [Processing Annotations 🎯](#processing-annotations-)
-    * [Exam Questions 🎯](#exam-questions--20)
-  * [Secure Coding](#secure-coding)
-    * [Application Security Overview](#application-security-overview)
-    * [Security Threat Categories](#security-threat-categories)
-    * [Java Security Policies](#java-security-policies)
-    * [Additional Security Guidelines](#additional-security-guidelines)
-  * [Java Logging API Overview](#java-logging-api-overview)
-    * [Purpose of the Logging API](#purpose-of-the-logging-api)
-    * [Configuring Logging](#configuring-logging)
-    * [Writing Log Messages](#writing-log-messages)
-    * [Applying Guarded Logging](#applying-guarded-logging)
-    * [Java Logging Best Practices](#java-logging-best-practices)
-  * [How to Write Doc Comments for the Javadoc Tool](#how-to-write-doc-comments-for-the-javadoc-tool)
-    * [Introduction](#introduction)
-      * [Principles](#principles)
-      * [Terminology](#terminology)
-      * [Source Files](#source-files)
-    * [Writing Doc Comments](#writing-doc-comments)
-      * [Format of a Doc Comment](#format-of-a-doc-comment)
-      * [Doc Comment Checking Tool](#doc-comment-checking-tool)
-      * [Descriptions](#descriptions)
-      * [A Style Guide](#a-style-guide)
-      * [Tag Conventions (`@tag`)](#tag-conventions-tag)
-      * [Documenting Default Constructors](#documenting-default-constructors)
-      * [Documenting Exceptions with `@throws` Tag](#documenting-exceptions-with-throws-tag)
-      * [Package-Level Comments](#package-level-comments)
-      * [Documenting Anonymous Inner Classes](#documenting-anonymous-inner-classes)
-      * [Including Images](#including-images)
-      * [Examples of Doc Comments](#examples-of-doc-comments)
-      * [Troubleshooting Curly Quotes (Microsoft Word)](#troubleshooting-curly-quotes-microsoft-word)
+    * [Java Certification Exam Guide](#java-certification-exam-guide)
+        * [Preparing for the Exam](#preparing-for-the-exam)
+        * [Registering for the Online Proctored Exam](#registering-for-the-online-proctored-exam)
+        * [How the Online Proctored Exam Is Conducted](#how-the-online-proctored-exam-is-conducted)
+        * [The Questions](#the-questions)
+        * [Exam Topics: Java SE 17 Developer](#exam-topics-java-se-17-developer)
+        * [Why This Section?](#why-this-section)
+        * [Table Of Contents](#table-of-contents)
+    * [Basics of Java Programming](#basics-of-java-programming)
+        * [The Java Ecosystem](#the-java-ecosystem)
+        * [Key Features of Java](#key-features-of-java)
+        * [Classes](#classes)
+        * [Objects](#objects)
+            * [Class Instantiation, Reference Values, and References](#class-instantiation-reference-values-and-references)
+        * [Instance Members](#instance-members)
+            * [Invoking Methods](#invoking-methods)
+        * [Static Members](#static-members)
+            * [Terminology for Class Members](#terminology-for-class-members)
+        * [Inheritance](#inheritance)
+        * [Aggregation](#aggregation)
+        * [Sample Java Program](#sample-java-program)
+            * [Essential Elements of a Java Program](#essential-elements-of-a-java-program)
+            * [Compiling a Program](#compiling-a-program)
+            * [Running a Program](#running-a-program)
+            * [Running a Single-File Source-Code Program](#running-a-single-file-source-code-program)
+        * [Program Output](#program-output)
+            * [Formatted Output](#formatted-output)
+    * [Basic Elements, Primitive Data Types, and Operators 🎯](#basic-elements-primitive-data-types-and-operators-)
+        * [Basic Language Elements](#basic-language-elements)
+            * [Lexical Tokens](#lexical-tokens)
+            * [Identifiers](#identifiers)
+            * [Keywords](#keywords)
+                * [Keywords in Java](#keywords-in-java)
+                * [Contextual Keywords](#contextual-keywords)
+                * [Reserved Keywords Not Currently in Use](#reserved-keywords-not-currently-in-use)
+                * [Reserved Literals in Java](#reserved-literals-in-java)
+            * [Separators](#separators)
+            * [Literals](#literals)
+            * [Integer Literals](#integer-literals)
+            * [Floating-Point Literals](#floating-point-literals)
+            * [Underscores in Numerical Literals](#underscores-in-numerical-literals)
+            * [Character Literals](#character-literals)
+            * [Escape Sequences](#escape-sequences)
+            * [String Literals](#string-literals)
+            * [Whitespace](#whitespace)
+            * [Comments](#comments)
+        * [Primitive Data Types 🎯](#primitive-data-types-)
+            * [The Integer Types](#the-integer-types)
+            * [The `char` Type](#the-char-type)
+            * [The Floating-Point Types](#the-floating-point-types)
+            * [The `boolean` Type](#the-boolean-type)
+        * [Conversions 🎯](#conversions-)
+            * [Widening and Narrowing Primitive Conversions](#widening-and-narrowing-primitive-conversions)
+            * [Widening and Narrowing Reference Conversions](#widening-and-narrowing-reference-conversions)
+            * [Boxing and Unboxing Conversions](#boxing-and-unboxing-conversions)
+            * [Other Conversions](#other-conversions)
+        * [Type Conversion Contexts 🎯](#type-conversion-contexts-)
+            * [Conversion categories](#conversion-categories)
+                * [Assignment Context](#assignment-context)
+                * [Method Invocation Context](#method-invocation-context)
+                * [Casting Context of the Unary Type Cast Operator (_type_)](#casting-context-of-the-unary-type-cast-operator-_type_)
+                * [Numeric Promotion Context](#numeric-promotion-context)
+        * [Precedence and Associativity Rules for Operators 🎯](#precedence-and-associativity-rules-for-operators-)
+            * [Operator Summary](#operator-summary)
+        * [Evaluation Order of Operands 🎯](#evaluation-order-of-operands-)
+            * [Left-Hand Operand Evaluation First](#left-hand-operand-evaluation-first)
+            * [Operand Evaluation before Operation Execution](#operand-evaluation-before-operation-execution)
+        * [The Simple Assignment Operator `=` 🎯](#the-simple-assignment-operator--)
+            * [Type Conversions in an Assignment Context](#type-conversions-in-an-assignment-context)
+        * [Arithmetic Operators: `*`, `/`, `%`, `+`, `-` 🎯](#arithmetic-operators-------)
+            * [Division Operator: `/`](#division-operator-)
+            * [Remainder Operator: `%`](#remainder-operator-)
+            * [Numeric Promotions in Arithmetic Expressions](#numeric-promotions-in-arithmetic-expressions)
+            * [Arithmetic Compound Assignment Operators: `*=`, `/=`, `%=`, `+=`, `-=`](#arithmetic-compound-assignment-operators------)
+        * [The Binary String Concatenation Operator `+` 🎯](#the-binary-string-concatenation-operator--)
+        * [Variable Increment and Decrement Operators: `++`,`--` 🎯](#variable-increment-and-decrement-operators----)
+        * [Boolean Expressions 🎯](#boolean-expressions-)
+        * [Relational Operators: `<`, `<=,` `>`, `>=` 🎯](#relational-operators-----)
+        * [Equality 🎯](#equality-)
+        * [Boolean Logical Operators: `!`, `^`, `&`, `|` 🎯](#boolean-logical-operators-----)
+        * [Conditional Operators: `&&`, `||` 🎯](#conditional-operators---)
+        * [Integer Bitwise Operators: `~`, `&`, `|`, `^` 🎯](#integer-bitwise-operators-----)
+        * [Shift Operators: `<<`, `>>`, `>>>` 🎯](#shift-operators----)
+        * [The Conditional Operator `?:` 🎯](#the-conditional-operator--)
+        * [Other Operators: `new`, `[]`, `instanceof`, `-`> 🎯](#other-operators-new--instanceof---)
+        * [Exam Questions 🎯](#exam-questions-)
+    * [Declarations 🎯](#declarations-)
+        * [Class Declarations 🎯](#class-declarations-)
+        * [Method Declarations 🎯](#method-declarations-)
+        * [Statements 🎯](#statements-)
+        * [Variable Declarations 🎯](#variable-declarations-)
+        * [Instance Methods and the Object Reference `this` 🎯](#instance-methods-and-the-object-reference-this-)
+        * [Method Overloading 🎯](#method-overloading-)
+        * [Constructors 🎯](#constructors-)
+        * [Static Member Declarations 🎯](#static-member-declarations-)
+        * [Arrays 🎯](#arrays-)
+        * [Parameter Passing](#parameter-passing)
+        * [Variable Arity Methods 🎯](#variable-arity-methods-)
+        * [The `main()` Method](#the-main-method)
+        * [Local Variable Type Inference 🎯](#local-variable-type-inference-)
+        * [Exam Questions 🎯](#exam-questions--1)
+    * [Control Flow 🎯](#control-flow-)
+        * [Selection Statements 🎯](#selection-statements-)
+        * [The `switch` Statement 🎯](#the-switch-statement-)
+        * [The `switch` Expression 🎯](#the-switch-expression-)
+        * [Iteration Statements 🎯](#iteration-statements-)
+        * [The `while` Statement 🎯](#the-while-statement-)
+        * [The `do`-`while` Statement 🎯](#the-do-while-statement-)
+        * [The `for(;;)` Statement 🎯](#the-for-statement-)
+        * [The `for(:)` Statement 🎯](#the-for-statement--1)
+        * [Transfer Statements 🎯](#transfer-statements-)
+        * [Labeled Statements 🎯](#labeled-statements-)
+        * [The `break` Statement 🎯](#the-break-statement-)
+        * [The `continue` Statement 🎯](#the-continue-statement-)
+        * [The `return` Statement 🎯](#the-return-statement-)
+        * [Exam Questions 🎯](#exam-questions--2)
+    * [Object-Oriented Programming 🎯](#object-oriented-programming-)
+        * [Implementing Inheritance 🎯](#implementing-inheritance-)
+        * [The Object Reference super 🎯](#the-object-reference-super-)
+        * [Chaining Constructors Using `this()` and `super()` 🎯](#chaining-constructors-using-this-and-super-)
+        * [Abstract Classes and Methods 🎯](#abstract-classes-and-methods-)
+        * [Final Declarations](#final-declarations)
+        * [Interfaces 🎯](#interfaces-)
+        * [Arrays and Subtyping](#arrays-and-subtyping)
+        * [Reference Values and Conversions](#reference-values-and-conversions)
+        * [Reference Value Assignment Conversions](#reference-value-assignment-conversions)
+        * [Method Invocation Conversions Involving References](#method-invocation-conversions-involving-references)
+        * [Reference Casting and the instanceof Operator 🎯](#reference-casting-and-the-instanceof-operator-)
+        * [Polymorphism 🎯](#polymorphism-)
+        * [Enum Types 🎯](#enum-types-)
+        * [Record Classes 🎯](#record-classes-)
+        * [Sealed Classes and Interfaces 🎯](#sealed-classes-and-interfaces-)
+        * [Exam Questions 🎯](#exam-questions--3)
+    * [Access Control 🎯](#access-control-)
+        * [Design Principle: Encapsulation 🎯](#design-principle-encapsulation-)
+        * [Java Source File Structure](#java-source-file-structure)
+        * [Packages](#packages)
+        * [Searching for Classes on the Class Path](#searching-for-classes-on-the-class-path)
+        * [Access Modifiers](#access-modifiers)
+        * [Scope Rules 🎯](#scope-rules-)
+        * [Implementing Immutability 🎯](#implementing-immutability-)
+        * [Exam Questions 🎯](#exam-questions--4)
+    * [Exception Handling 🎯](#exception-handling-)
+        * [Stack-Based Execution and Exception Propagation](#stack-based-execution-and-exception-propagation)
+        * [Exception Types 🎯](#exception-types-)
+        * [Exception Handling: `try`, `catch`, and `finally` 🎯](#exception-handling-try-catch-and-finally-)
+        * [The `throw` Statement](#the-throw-statement)
+        * [The `throws` Clause](#the-throws-clause)
+        * [The Multi-`catch` Clause 🎯](#the-multi-catch-clause-)
+        * [The `try`-with-resources Statement 🎯](#the-try-with-resources-statement-)
+        * [Advantages of Exception Handling](#advantages-of-exception-handling)
+        * [Exam Questions 🎯](#exam-questions--5)
+    * [Selected API Classes 🎯](#selected-api-classes-)
+        * [Overview of the `java.lang` Package](#overview-of-the-javalang-package)
+        * [The `Object` Class](#the-object-class)
+        * [The Wrapper Classes 🎯](#the-wrapper-classes-)
+        * [The `String` Class 🎯](#the-string-class-)
+        * [The `StringBuilder` Class 🎯](#the-stringbuilder-class-)
+        * [The `Math` Class 🎯](#the-math-class-)
+        * [The `Random` Class](#the-random-class)
+        * [Using Big Numbers](#using-big-numbers)
+        * [Exam Questions 🎯](#exam-questions--6)
+    * [Nested Type Declarations 🎯](#nested-type-declarations-)
+        * [Overview of Nested Type Declarations 🎯](#overview-of-nested-type-declarations-)
+        * [Static Member Types 🎯](#static-member-types-)
+        * [Non-Static Member Classes 🎯](#non-static-member-classes-)
+        * [Local Classes 🎯](#local-classes-)
+        * [Static Local Types 🎯](#static-local-types-)
+        * [Anonymous Classes 🎯](#anonymous-classes-)
+        * [Exam Questions 🎯](#exam-questions--7)
+    * [Object Lifetime 🎯](#object-lifetime-)
+        * [Garbage Collection 🎯](#garbage-collection-)
+        * [Reachable Objects 🎯](#reachable-objects-)
+        * [Facilitating Garbage Collection 🎯](#facilitating-garbage-collection-)
+        * [Invoking Garbage Collection Programmatically 🎯](#invoking-garbage-collection-programmatically-)
+        * [Initializers 🎯](#initializers-)
+        * [Field Initializer Expressions 🎯](#field-initializer-expressions-)
+        * [Static Initializer Blocks 🎯](#static-initializer-blocks-)
+        * [Instance Initializer Blocks 🎯](#instance-initializer-blocks-)
+        * [Constructing Initial Object State 🎯](#constructing-initial-object-state-)
+        * [Exam Questions 🎯](#exam-questions--8)
+    * [Generics 🎯](#generics-)
+        * [Introducing Generics 🎯](#introducing-generics-)
+        * [Generic Types and Parameterized Types 🎯](#generic-types-and-parameterized-types-)
+        * [Collections and Generics 🎯](#collections-and-generics-)
+        * [Wildcards 🎯](#wildcards-)
+        * [Using References of Wildcard Parameterized Types 🎯](#using-references-of-wildcard-parameterized-types-)
+        * [Bounded Type Parameters 🎯](#bounded-type-parameters-)
+        * [Generic Methods and Constructors 🎯](#generic-methods-and-constructors-)
+        * [Implementing a Simplified Generic Stack 🎯](#implementing-a-simplified-generic-stack-)
+        * [Wildcard Capture 🎯](#wildcard-capture-)
+        * [Flexibility with Wildcard Parameterized Types 🎯](#flexibility-with-wildcard-parameterized-types-)
+        * [Type Erasure 🎯](#type-erasure-)
+        * [Implications for Overloading and Overriding 🎯](#implications-for-overloading-and-overriding-)
+        * [Limitations and Restrictions on Generic Types 🎯](#limitations-and-restrictions-on-generic-types-)
+        * [Exam Questions 🎯](#exam-questions--9)
+    * [Collections 🎯](#collections-)
+        * [The Java Collections Framework 🎯](#the-java-collections-framework-)
+        * [Collections 🎯](#collections--1)
+        * [The `Collections` Class 🎯](#the-collections-class-)
+        * [Lists 🎯](#lists-)
+        * [Declaring References and Constructing ArrayLists 🎯](#declaring-references-and-constructing-arraylists-)
+        * [Modifying an `ArrayList<E>` 🎯](#modifying-an-arrayliste-)
+        * [Querying an `ArrayList<E>` 🎯](#querying-an-arrayliste-)
+        * [Iterating Over an `ArrayList<E>` 🎯](#iterating-over-an-arrayliste-)
+        * [Converting an `ArrayList<E>` to an `Array` 🎯](#converting-an-arrayliste-to-an-array-)
+        * [Creating `List` Views 🎯](#creating-list-views-)
+        * [`Arrays` versus `ArrayLists` 🎯](#arrays-versus-arraylists-)
+        * [The `Arrays` Class 🎯](#the-arrays-class-)
+        * [Sets 🎯](#sets-)
+        * [Sorted Sets and Navigable Sets 🎯](#sorted-sets-and-navigable-sets-)
+        * [Queues 🎯](#queues-)
+        * [Deques 🎯](#deques-)
+        * [Maps 🎯](#maps-)
+        * [Map Implementations 🎯](#map-implementations-)
+        * [Sorted Maps and Navigable Maps 🎯](#sorted-maps-and-navigable-maps-)
+        * [Exam Questions 🎯](#exam-questions--10)
+    * [Functional-Style Programming 🎯](#functional-style-programming-)
+        * [Functional Interfaces 🎯](#functional-interfaces-)
+        * [Lambda Expressions 🎯](#lambda-expressions-)
+        * [Lambda Expressions and Anonymous Classes 🎯](#lambda-expressions-and-anonymous-classes-)
+        * [Overview of Built-In Functional Interfaces 🎯](#overview-of-built-in-functional-interfaces-)
+        * [Suppliers 🎯](#suppliers-)
+        * [Predicates 🎯](#predicates-)
+        * [Consumers 🎯](#consumers-)
+        * [Functions 🎯](#functions-)
+        * [Two-Arity Specialization of `Function<T, R>`: `BiFunction<T, U, R>` 🎯](#two-arity-specialization-of-functiont-r-bifunctiont-u-r-)
+        * [Extending `Function<T,T>`: `UnaryOperator<T>` 🎯](#extending-functiontt-unaryoperatort-)
+        * [Extending `BiFunction<T,T,T>`: `BinaryOperator<T>` 🎯](#extending-bifunctionttt-binaryoperatort-)
+        * [Currying Functions 🎯](#currying-functions-)
+        * [Method and Constructor References 🎯](#method-and-constructor-references-)
+        * [Contexts for Defining Lambda Expressions 🎯](#contexts-for-defining-lambda-expressions-)
+        * [Exam Questions 🎯](#exam-questions--11)
+    * [`Object` Comparison 🎯](#object-comparison-)
+        * [The `Objects` Class 🎯](#the-objects-class-)
+        * [Implementing the `equals()` Method 🎯](#implementing-the-equals-method-)
+        * [Implementing the `hashCode()` Method 🎯](#implementing-the-hashcode-method-)
+        * [Implementing the `java.lang.Comparable<E>` Interface 🎯](#implementing-the-javalangcomparablee-interface-)
+        * [Implementing the `java.util.Comparator<E>` Interface 🎯](#implementing-the-javautilcomparatore-interface-)
+        * [Exam Questions 🎯](#exam-questions--12)
+    * [Streams 🎯](#streams-)
+        * [Introduction to Streams](#introduction-to-streams)
+        * [Running Example: The CD Record Class](#running-example-the-cd-record-class)
+        * [Stream Basics 🎯](#stream-basics-)
+        * [Building Streams 🎯](#building-streams-)
+        * [Intermediate Stream Operations 🎯](#intermediate-stream-operations-)
+        * [The `Optional` Class 🎯](#the-optional-class-)
+        * [Terminal Stream Operations 🎯](#terminal-stream-operations-)
+        * [Collectors 🎯](#collectors-)
+        * [Parallel Streams 🎯](#parallel-streams-)
+        * [Exam Questions 🎯](#exam-questions--13)
+    * [Date and Time 🎯](#date-and-time-)
+        * [Date and Time API Overview 🎯](#date-and-time-api-overview-)
+        * [Working with Dates and Times 🎯](#working-with-dates-and-times-)
+        * [Using Temporal Units and Temporal Fields 🎯](#using-temporal-units-and-temporal-fields-)
+        * [Working with Instants 🎯](#working-with-instants-)
+        * [Working with Periods 🎯](#working-with-periods-)
+        * [Working with Durations 🎯](#working-with-durations-)
+        * [Working with Time Zones and Daylight Savings 🎯](#working-with-time-zones-and-daylight-savings-)
+        * [Converting Date and Time Values to Legacy Date](#converting-date-and-time-values-to-legacy-date)
+        * [Exam Questions 🎯](#exam-questions--14)
+    * [Localization 🎯](#localization-)
+        * [Using Locales 🎯](#using-locales-)
+        * [Properties Files 🎯](#properties-files-)
+        * [Bundling Resources 🎯](#bundling-resources-)
+        * [Core API for Formatting and Parsing of Values 🎯](#core-api-for-formatting-and-parsing-of-values-)
+        * [Formatting and Parsing Number, Currency, and Percentage Values 🎯](#formatting-and-parsing-number-currency-and-percentage-values-)
+        * [Formatting and Parsing Date and Time 🎯](#formatting-and-parsing-date-and-time-)
+        * [Formatting and Parsing Messages 🎯](#formatting-and-parsing-messages-)
+        * [Exam Questions 🎯](#exam-questions--15)
+    * [Java Module System 🎯](#java-module-system-)
+        * [Making the Case for Modules 🎯](#making-the-case-for-modules-)
+        * [The Modular JDK 🎯](#the-modular-jdk-)
+        * [Module Basics 🎯](#module-basics-)
+        * [Overview of Module Directives 🎯](#overview-of-module-directives-)
+        * [Creating a Modular Application 🎯](#creating-a-modular-application-)
+        * [Compiling and Running a Modular Application 🎯](#compiling-and-running-a-modular-application-)
+        * [Creating JAR Files 🎯](#creating-jar-files-)
+        * [Open Modules and the open Directive 🎯](#open-modules-and-the-open-directive-)
+        * [Services 🎯](#services-)
+        * [Creating Runtime Images 🎯](#creating-runtime-images-)
+        * [Categories of Modules 🎯](#categories-of-modules-)
+        * [Migrating to Modules 🎯](#migrating-to-modules-)
+        * [Exploring Modules 🎯](#exploring-modules-)
+        * [Summary of Selected Operations with the JDK Tools 🎯](#summary-of-selected-operations-with-the-jdk-tools-)
+        * [Exam Questions 🎯](#exam-questions--16)
+    * [Java I/O 🎯](#java-io-)
+        * [Input and Output 🎯](#input-and-output-)
+        * [Byte Streams: Input Streams and Output Streams 🎯](#byte-streams-input-streams-and-output-streams-)
+        * [Character Streams: Readers and Writers 🎯](#character-streams-readers-and-writers-)
+        * [The `Console` Class 🎯](#the-console-class-)
+        * [Object Serialization 🎯](#object-serialization-)
+        * [Characteristics of a Hierarchical File System 🎯](#characteristics-of-a-hierarchical-file-system-)
+        * [Creating Path Objects 🎯](#creating-path-objects-)
+        * [Working with Path Objects 🎯](#working-with-path-objects-)
+        * [Operations on Directory Entries 🎯](#operations-on-directory-entries-)
+        * [Reading and Writing Files Using Paths 🎯](#reading-and-writing-files-using-paths-)
+        * [Managing File Attributes 🎯](#managing-file-attributes-)
+        * [Creating Directory Entries 🎯](#creating-directory-entries-)
+        * [Stream Operations on Directory Entries 🎯](#stream-operations-on-directory-entries-)
+        * [Exam Questions 🎯](#exam-questions--17)
+    * [Concurrency 🎯](#concurrency-)
+        * [Threads and Concurrency 🎯](#threads-and-concurrency-)
+        * [Runtime Organization for Thread Execution 🎯](#runtime-organization-for-thread-execution-)
+        * [Creating Threads 🎯](#creating-threads-)
+        * [Thread Lifecycle 🎯](#thread-lifecycle-)
+        * [Thread Issues 🎯](#thread-issues-)
+        * [Utility Classes `TimeUnit` and `ThreadLocalRandom`](#utility-classes-timeunit-and-threadlocalrandom)
+        * [The Executor Framework 🎯](#the-executor-framework-)
+        * [The Fork/Join Framework 🎯](#the-forkjoin-framework-)
+        * [Writing Thread-Safe Code 🎯](#writing-thread-safe-code-)
+        * [Special-Purpose Synchronizers 🎯](#special-purpose-synchronizers-)
+        * [Synchronized Collections and Maps 🎯](#synchronized-collections-and-maps-)
+        * [Concurrent Collections and Maps 🎯](#concurrent-collections-and-maps-)
+        * [Exam Questions 🎯](#exam-questions--18)
+    * [Database Connectivity 🎯](#database-connectivity-)
+        * [Introduction to Relational Databases 🎯](#introduction-to-relational-databases-)
+        * [Introduction to JDBC 🎯](#introduction-to-jdbc-)
+        * [Establishing a Database Connection 🎯](#establishing-a-database-connection-)
+        * [Creating and Executing SQL Statements 🎯](#creating-and-executing-sql-statements-)
+        * [Processing Query Results 🎯](#processing-query-results-)
+        * [Customizing Result Sets 🎯](#customizing-result-sets-)
+        * [Discovering Database and ResultSet Metadata 🎯](#discovering-database-and-resultset-metadata-)
+        * [Implementing Transaction Control 🎯](#implementing-transaction-control-)
+        * [Exam Questions 🎯](#exam-questions--19)
+    * [Annotations 🎯](#annotations-)
+        * [Basics of Annotations 🎯](#basics-of-annotations-)
+        * [Declaring Annotation Types 🎯](#declaring-annotation-types-)
+        * [Applying Annotations 🎯](#applying-annotations-)
+        * [Meta-Annotations 🎯](#meta-annotations-)
+        * [Selected Standard Annotations 🎯](#selected-standard-annotations-)
+        * [Processing Annotations 🎯](#processing-annotations-)
+        * [Exam Questions 🎯](#exam-questions--20)
+    * [Secure Coding](#secure-coding)
+        * [Application Security Overview](#application-security-overview)
+        * [Security Threat Categories](#security-threat-categories)
+        * [Java Security Policies](#java-security-policies)
+        * [Additional Security Guidelines](#additional-security-guidelines)
+    * [Java Logging API Overview](#java-logging-api-overview)
+        * [Purpose of the Logging API](#purpose-of-the-logging-api)
+        * [Configuring Logging](#configuring-logging)
+        * [Writing Log Messages](#writing-log-messages)
+        * [Applying Guarded Logging](#applying-guarded-logging)
+        * [Java Logging Best Practices](#java-logging-best-practices)
+    * [How to Write Doc Comments for the Javadoc Tool](#how-to-write-doc-comments-for-the-javadoc-tool)
+        * [Introduction](#introduction)
+            * [Principles](#principles)
+            * [Terminology](#terminology)
+            * [Source Files](#source-files)
+        * [Writing Doc Comments](#writing-doc-comments)
+            * [Format of a Doc Comment](#format-of-a-doc-comment)
+            * [Doc Comment Checking Tool](#doc-comment-checking-tool)
+            * [Descriptions](#descriptions)
+            * [A Style Guide](#a-style-guide)
+            * [Tag Conventions (`@tag`)](#tag-conventions-tag)
+            * [Documenting Default Constructors](#documenting-default-constructors)
+            * [Documenting Exceptions with `@throws` Tag](#documenting-exceptions-with-throws-tag)
+            * [Package-Level Comments](#package-level-comments)
+            * [Documenting Anonymous Inner Classes](#documenting-anonymous-inner-classes)
+            * [Including Images](#including-images)
+            * [Examples of Doc Comments](#examples-of-doc-comments)
+            * [Troubleshooting Curly Quotes (Microsoft Word)](#troubleshooting-curly-quotes-microsoft-word)
+
 <!-- TOC -->
 
 
@@ -1573,15 +1575,204 @@ a[i]+=1; // Evaluates as a[2] = a[2] + 1, and a[2] gets the value 2041
 
 ### The Binary String Concatenation Operator `+` 🎯
 
+- The binary operator `+` is overloaded in the sense that the operation performed is determined by the type of the operands
+- When one of the operands is a `String` object a string concatenation is performed rather than numeric addition
+- String concatenation results in a newly created String object in which the characters in the text representation of the left-hand operand precede the characters in the text representation of the right-hand operand
+- A **_string conversion_** is performed on the non-`String` operand as follows:
+    - For an operand of a primitive data type, its value is converted to a text representation
+    - For all reference value operands, a text representation is constructed by calling the no-argument `toString()` method on the referred object
+        - Most classes override this method from the `Object` class to provide a more meaningful text representation of their objects
+    - Values like `true`, `false`, and `null` have text representations that correspond to their names
+        - A reference variable with the value null also has the text representation `null` in this context.
+
 ### Variable Increment and Decrement Operators: `++`,`--` 🎯
+
+- Variable increment (`++`) and decrement (`--`) operators come in two flavors: **_prefix_** and **_postfix_**
+- These unary operators have the side effect of changing the value of the arithmetic operand, which must evaluate to a variable
+- These operators cannot be applied to a variable that is declared final and that has been initialized, as the side effect would change the value in such a variable
+- The Increment Operator `++`
+    - The prefix increment operator adds `1` to the value in `i`, and stores the new value in `i` then returns the new value as the value of the expression
+    - The postfix increment operator adds `1` to the value in `j`, and stores the new value in j then returns the original value that was in `j` as the value of the expression
+- The Decrement Operator `--`
+    - The prefix decrement operator subtracts 1 from the value of i, and stores the new value in i then returns the new value as the value of the expression.
+    - The postfix decrement operator subtracts 1 from the value of j, and stores the new value in j then returns the original value that was in j as the value of the expression.
+- This behavior of decrement and increment operators applies to any variable whose type is a numeric primitive type or its corresponding numeric wrapper type
+- Necessary numeric promotions are performed on the value 1 and the value of the variable
+    - Before the new value is assigned to the variable, it is subjected to any narrowing primitive conversion and/or boxing that might be necessary
+
+```java
+// (1) Prefix order: increment/decrement operand before use.
+int i = 10;
+int k = ++i + --i; // ((++i) + (--i)). k gets the value 21 and i becomes 10.
+--i; // Only side effect utilized. i is 9. (expression statement)
+Integer iRef = 11; // Boxing on assignment
+--iRef; // Only side effect utilized. iRef refers to an Integer
+// object with the value 10. (expression statement)
+k =++iRef +--iRef;// ((++iRef) + (--iRef)). k gets the value 21 and
+// iRef refers to an Integer object with the value 10.
+// (2) Postfix order: increment/decrement operand after use.
+long j = 10;
+long n = j++ + j--; // ((j++) + (j--)). n gets the value 21L and j becomes 10L.
+j++; // Only side effect utilized. j is 11L. (expression statement)
+```
+
+- Execution of the expression statement `--iRef`; proceeds as follows:
+    - The value in the `Integer` object referred to by the reference `iRef` is unboxed, resulting in the `int` value `11`
+    - The value `11` is decremented, resulting in the value `10`
+    - The value `10` is boxed in an `Integer` object, and this object’s reference value is assigned to the reference `iRef`
+    - The `int` value `10` of the expression statement is discarded
+- We cannot associate increment and decrement operators
+    - we cannot write (`++(++a)`)
+    - The reason is that any operand to ++ must evaluate to a variable, but the evaluation of (`++a`) results in a value
 
 ### Boolean Expressions 🎯
 
+- Boolean expressions can be formed using
+    - relational operators
+    - equality operators
+    - boolean logical operators
+    - conditional operators
+    - assignment operator
+    - `instanceof` operator
+
 ### Relational Operators: `<`, `<=,` `>`, `>=` 🎯
+
+- All relational operators are binary operators and their operands are **_numeric expressions_**
+- Binary numeric promotion is applied to the operands of these operators
+    - The evaluation results in a boolean value.
+- Relational operators have lower precedence than arithmetic operators, but higher than that of the assignment operators
+
+```java
+double hours = 45.5;
+Double time = 18.0; // Boxing of double value.
+boolean overtime = hours >= 35; // true. Binary numeric promotion: double <-- int.
+boolean beforeMidnight = time < 24.0;// true. Unboxing of value in time reference.
+char letterA = 'A';
+boolean order = letterA < 'a'; // true. Binary numeric promotion: int <-- char.
+```
+
+```java
+int a = 1, b = 7, c = 10;
+//Relational operators are nonassociative
+boolean illegal = a <= b <= c; // (1) Illegal. Compile-time error!
+boolean valid2 = a <= b && b <= c; // (2) OK.
+```
+
+- Since relational operators have left associativity, the evaluation of the expression `a <= b <= c` at (1) in these examples would proceed as follows: `((a <= b) <= c)`. Evaluation of `(a <= b)` would yield a `boolean` value that is not permitted as an operand of a relational operator; that is, (boolean value <= c) would be **_illegal_**.
 
 ### Equality 🎯
 
+- We distinguish between **_primitive data value equality_**, **_object reference equality_**, and **_object value equality_**
+
+#### Primitive Data Value Equality: `==`, `!=`
+
+- Binary numeric promotion may be applied to the non-boolean operands of these equality operators
+- Given that a and b represent operands of primitive data types
+    - `a == b` Determines whether a and b are equal—that is, **_have the same primitive value_** (equality)
+    - `a != b` Determines whether a and b are not equal—that is, **_do not have the same primitive value_** (inequality)
+
+```java
+int year = 2002;
+boolean isEven = year % 2 == 0; // true.
+boolean compare = '1' == 1; // false. Binary numeric promotion applied.
+boolean test = compare == false; // true.
+```
+
+- Care must be exercised when comparing floating-point numbers for equality, as an infinite number of floating-point values can be stored only as approximations in a finite number of bits
+    - (`1.0 - 2.0/3.0 == 1.0/3.0`) returns false, although mathematically the result should be true
+- Analogous to the discussion for relational operators, mathematical expressions like `a = b = c` must be written using relational and logical/conditional operators
+    - Since equality operators have left associativity, the evaluation of the expression `a == b == c` would proceed as follows: `((a == b) == c)`
+    - Evaluation of (a == b)
+      would yield a `boolean` value that is permitted as an operand of a data value equality operator, but (boolean value == c) would be illegal if c had a numeric type
+
+```java
+int a, b, c;
+a =b =c =5;
+boolean illegal = a == b == c; // (1) Illegal.
+boolean valid2 = a == b && b == c; // (2) Legal.
+boolean valid3 = a == b == true; // (3) Legal.
+```
+
+#### Object Reference Equality: `==`, `!=`
+
+- The equality operator `==` and the inequality operator `!=` can be applied to reference variables to test whether they refer to the same object
+- Given that r and s are reference variables
+    - `r == s` Determines whether r and s are equal—that is, **_have the same reference value_** and therefore refer to the same object (also called aliases) (equality).
+    - `r != s` Determines whether r and s are not equal—that is, **_do not have the same reference value_** and therefore refer to different objects (inequality).
+- The operands must be cast compatible. It must be possible to cast the reference value of the one into the other’s type, otherwise a compile-time error will result
+
+```java
+Pizza pizzaA = new Pizza("Sweet&Sour"); // new object
+Pizza pizzaB = new Pizza("Sweet&Sour"); // new object
+Pizza pizzaC = new Pizza("Hot&Spicy"); // new object
+String banner = "Come and get it!"; // new object
+boolean test = banner == pizzaA; // (1) Compile-time error
+boolean test1 = pizzaA == pizzaB; // false
+boolean test2 = pizzaA == pizzaC; // false
+pizzaA =pizzaB; // Denote the same object; are aliases
+boolean test3 = pizzaA == pizzaB; // true
+```
+
+- The `null` literal can be assigned to any reference variable, and the reference value in a reference variable can be compared for equality with the `null` literal
+- **_Note that only when the type of both operands is either a reference type or the null type do these operators test for object reference equality_**
+    - **_Otherwise, they test for primitive data equality_**
+
+```java
+Integer iRef = 10;
+boolean b1 = iRef == null; // Object reference equality
+boolean b2 = iRef == 10; // (1) Primitive data value equality
+boolean b3 = null == 10; // Compile-time error!
+```
+
+#### Object Value Equality
+
+- The `Object` class provides the method `public boolean equals(Object obj)`, which can be **_overridden_** to give the right semantics of object value equality
+- The default implementation of this method in the `Object` class returns `true` **_only if the object is compared with itself_**
+    - as if the equality operator `==` had been used to compare aliases of an object.
+- Certain classes in the Java SE API override the `equals()` method, such as `java.lang.String` and the wrapper classes for the primitive data types
+    - For two `String` objects, value equality means they contain identical character sequences
+    - For the wrapper classes, value equality means the wrapper objects have the same primitive value and are of the same wrapper type
+
+```java
+// Equality for String objects means identical character sequences.
+String movie1 = new String("The Revenge of the Exception Handler");
+String movie2 = new String("High Noon at the Java Corral");
+String movie3 = new String("The Revenge of the Exception Handler");
+boolean test0 = movie1.equals(movie2); // false.
+boolean test1 = movie1.equals(movie3); // true.
+// Equality for wrapper classes means same type and same primitive value.
+Boolean flag1 = true; // Boxing.
+Boolean flag2 = false; // Boxing.
+boolean test2 = flag1.equals("true"); // false. Not same type.
+boolean test3 = flag1.equals(!flag2); // true. Same type and value.
+Integer iRef = 100; // Boxing.
+Short sRef = 100; // Boxing <--- short <--- int
+boolean test4 = iRef.equals(100); // true. Same type and value.
+boolean test5 = iRef.equals(sRef); // false. Not same type.
+boolean test6 = iRef.equals(3.14); // false. Not same type.
+// The Pizza class does not override the equals() method, so we can use either
+// equals() method inherited from the Object class or equality operator ==.
+Pizza pizza1 = new Pizza("Veggies Delight");
+Pizza pizza2 = new Pizza("Veggies Delight");
+Pizza pizza3 = new Pizza("Cheese Delight");
+boolean test7 = pizza1.equals(pizza2); // false.
+boolean test8 = pizza1.equals(pizza3); // false.
+boolean test9 = pizza1 == pizza2; // false.
+pizza1 =pizza2; // Creates aliases.
+boolean test10 = pizza1.equals(pizza2); // true.
+boolean test11 = pizza1 == pizza2; // true.
+```
+
 ### Boolean Logical Operators: `!`, `^`, `&`, `|` 🎯
+
+- Boolean logical operators include
+    - unary operator ! (logical complement)
+    - binary operators & (logical AND), | (logical inclusive OR), and ^ (logical exclusive OR, also called logical XOR).
+- These operators can be applied to boolean or Boolean operands, returning a boolean value
+- The operators &, |, and ^ can also be applied to integral operands to perform bitwise logical operations
+- These operators always evaluate both of the operands, unlike their counterpart conditional operators && and ||
+    - Unboxing is applied to the operand values, if necessary
+//TODO: Operand Evaluation for Boolean Logical Operators
 
 ### Conditional Operators: `&&`, `||` 🎯
 
