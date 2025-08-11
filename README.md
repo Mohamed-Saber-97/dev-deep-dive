@@ -14,6 +14,7 @@ This repository is a collection of extensive study notes covering:
     - [**Thymeleaf**](https://www.thymeleaf.org/documentation.html)
     - [**Flowable Open Source**](./Flowable/Flowable.md#flowable-open-source)
 - **Frontend Development**
+    - [**Thymeleaf**](./Thymeleaf/Thymeleaf.md#thymeleaf)
     - [**MDN Curriculum**](https://developer.mozilla.org/en-US/curriculum/)
         - **HTML**
         - **CSS**
